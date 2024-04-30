@@ -31,6 +31,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define QUICK_TAP_TERM 0
 #define TAPPING_TERM 100
 
+// Performance
+#define polling_interval 1
+#define force_nkro true
+
+// Fix UEFI boot problems
+//UEFI was not detecting some of my boards 
+#define SPLIT_WATCHDOG_ENABLE
+#define SPLIT_MAX_CONNECTION_ERRORS 30
+#define SPLIT_CONNECTION_CHECK_TIMEOUT 500
+#define SPLIT_USB_DETECT
+#define SPLIT_USB_TIMEOUT 1000
+#define SPLIT_USB_TIMEOUT_POLL 20
+#define SPLIT_WATCHDOG_TIMEOUT 5000
+
 // Underglow
 /*
 #undef RGBLIGHT_LED_COUNT
